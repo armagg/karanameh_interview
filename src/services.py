@@ -15,4 +15,4 @@ def cache_is_exist(key: str):
     return r.exists(key)
 
 def cache_get(key):
-    return r.get(key)
+    return r.get(key).decode()
